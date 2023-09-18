@@ -3,6 +3,9 @@ src = "src"
 out = "out"
 libs = ["lib"]
 remappings = ['@openzeppelin/contracts=lib/openzeppelin-contracts/contracts']
-ffi = true
+ffi = true # enables the use of the Foreign Function Interface (FFI). useful when you want to compile and test code written in languages other than the one Foundry primarily supports (Solidity)
+fs_permissions = [
+    { access = "read", path = "./img/" },
+] # read from different paths (much safer than ffi = true
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
