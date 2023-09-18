@@ -65,11 +65,12 @@ contract MoodNft is ERC721 {
                 abi.encodePacked(
                     _baseURI(),
                     Base64.encode(
-                        bytes( // convert to bytes so that we can use OpenZeppelin Base64 encoder --> transform bytes data into strings
+                        bytes(
                             abi.encodePacked(
-                                '{"name": "',
-                                name(),
-                                '", "description": "An NFT that reflects the owners mood.", "attributes": [{trait_type": "moodiness", "value": 100}], "image": "',
+                                '{"name":"',
+                                name(), // You can add whatever name here
+                                '", "description":"An NFT that reflects the mood of the owner, 100% on Chain!", ',
+                                '"attributes": [{"trait_type": "moodiness", "value": 100}], "image":"',
                                 imageURI,
                                 '"}' // first we created this string
                             ) // second we concatenate it together using abi.encodePacked

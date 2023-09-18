@@ -2,8 +2,8 @@
 
 A Foundry NFT Project that is part of Cyfrin Solidity Blockchain Course.
 
-1. An IPFS Hosted NFT 
-2. An SVG NFT (Hosted 100% on-chain) 
+1. [An IPFS Hosted NFT](https://sepolia.etherscan.io/address/0x67264aA00431b4A05cF5350975DF2Ef36a2e2aB5)
+2. [An SVG NFT (Hosted 100% on-chain)](https://sepolia.etherscan.io/address/0x3c71c7fe7bf493aa4ad402e047301eaec5f89d2a)
 
 <br/>
 <p align="center">
