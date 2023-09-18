@@ -51,5 +51,8 @@ mintBasicNft:
 mintMoodNft:
 	@forge script script/Interactions.s.sol:MintMoodNft $(NETWORK_ARGS)
 
+mintMood:
+	cast send 0x5FbDB2315678afecb367f032d93F642f64180aa3 "mintNft()"
+
 flipMoodNft:
 	@forge script script/Interactions.s.sol:FlipMoodNft $(NETWORK_ARGS)
