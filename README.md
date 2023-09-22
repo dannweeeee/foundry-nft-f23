@@ -24,7 +24,7 @@ A Foundry NFT Project that is part of Cyfrin Solidity Blockchain Course.
 ## Quickstart
 
 ```
-git clone https://github.com/Cyfrin/foundry-nft-f23
+git clone https://github.com/dannweeeee/foundry-nft-f23
 cd foundry-nft-f23
 forge install
 forge build
