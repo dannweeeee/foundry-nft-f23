@@ -13,7 +13,7 @@ A Foundry NFT Project that is part of Cyfrin Solidity Blockchain Course.
 </p>
 <br/>
 
-## Requirements
+### Requirements
 
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
   - You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
@@ -21,7 +21,7 @@ A Foundry NFT Project that is part of Cyfrin Solidity Blockchain Course.
   - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
 
 
-## Quickstart
+### Quickstart
 
 ```
 git clone https://github.com/dannweeeee/foundry-nft-f23
@@ -30,13 +30,13 @@ forge install
 forge build
 ```
 
-## Start a local node
+### Start a local node
 
 ```
 make anvil
 ```
 
-## Deploy
+### Deploy
 
 This will default to your local node. You need to have it running in another terminal in order for it to deploy.
 
@@ -44,11 +44,11 @@ This will default to your local node. You need to have it running in another ter
 make deploy
 ```
 
-## Deploy - Other Network
+### Deploy - Other Network
 
 [See below](#deployment-to-a-testnet-or-mainnet)
 
-## Testing
+### Testing
 
 We talk about 4 test tiers in the video. 
 
@@ -69,14 +69,14 @@ or
 forge test --fork-url $SEPOLIA_RPC_URL
 ```
 
-### Test Coverage
+#### Test Coverage
 
 ```
 forge coverage
 ```
 
 
-# Deployment to a testnet or mainnet
+## Deployment to a testnet or mainnet
 
 1. Setup environment variables
 
@@ -104,7 +104,7 @@ make deploy ARGS="--network sepolia"
 make deploySvg ARGS="--network sepolia"
 ```
 
-## Scripts
+### Scripts
 
 After deploy to a testnet or local net, you can run the scripts. 
 
@@ -120,7 +120,7 @@ or, to create a ChainlinkVRF Subscription:
 make createSubscription ARGS="--network sepolia"
 ```
 
-## Base64
+### Base64
 
 To get the base64 of an image, you can use the following command:
 
@@ -135,7 +135,7 @@ echo "data:application/json;base64,$(base64 -i ./images/dynamicNft/happy_image_u
 ```
 
 
-## Estimate gas
+### Estimate gas
 
 You can estimate how much gas things cost by running:
 
@@ -146,7 +146,7 @@ forge snapshot
 And you'll see and output file called `.gas-snapshot`
 
 
-# Formatting
+## Formatting
 
 
 To run code formatting:
