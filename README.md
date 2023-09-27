@@ -20,7 +20,6 @@ A Foundry NFT Project that is part of Cyfrin Solidity Blockchain Course.
 - [foundry](https://getfoundry.sh/)
   - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
 
-
 ### Quick Start
 
 ```
@@ -50,20 +49,14 @@ make deploy
 
 ### Testing
 
-We talk about 4 test tiers in the video. 
-
-1. Unit
-2. Integration
-3. Forked
-4. Staging
-
-This repo we cover #1 and #3. 
+1. Unit Testing
+2. Forked Testing
 
 ```
 forge test
 ```
 
-or 
+or
 
 ```
 forge test --fork-url $SEPOLIA_RPC_URL
@@ -74,7 +67,6 @@ forge test --fork-url $SEPOLIA_RPC_URL
 ```
 forge coverage
 ```
-
 
 ## Deployment to a Testnet or Mainnet
 
@@ -106,9 +98,9 @@ make deploySvg ARGS="--network sepolia"
 
 ### Scripts
 
-After deploy to a testnet or local net, you can run the scripts. 
+After deploy to a testnet or local net, you can run the scripts.
 
-Using cast deployed locally example: 
+Using cast deployed locally example:
 
 ```
 cast send <RAFFLE_CONTRACT_ADDRESS> "enterRaffle()" --value 0.1ether --private-key <PRIVATE_KEY> --rpc-url $SEPOLIA_RPC_URL
@@ -134,7 +126,6 @@ Then, you can get the base64 encoding of the json object by placing the imageURI
 echo "data:application/json;base64,$(base64 -i ./images/dynamicNft/happy_image_uri.json)"
 ```
 
-
 ### Estimate Gas
 
 You can estimate how much gas things cost by running:
@@ -145,11 +136,10 @@ forge snapshot
 
 And you'll see and output file called `.gas-snapshot`
 
-
 ## Formatting
 
-
 To run code formatting:
+
 ```
 forge fmt
 ```
